@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato de Heróis</title>
+</head>
+<body>
+    <h1>Contrato de Heróis</h1>
+    <form action="">
+        <fieldset>
+        <label for="nome">Nome do Herói:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="idade">Idade do Herói:</label><br>
+        <input type="number" id="idade" name="idade" min="16" max="61"><br><br>
+
+        <label for="aura">Cor da Aura:</label><br>
+        <input type="color" id="aura" name="aura"><br><br>
+        <label for="foto">Foto do Herói:</label><br>
+        <input type="file" id="foto" name="foto"><br>
+        </fieldset>
+
+        <fieldset>
+        <label for="classe">Classe do Herói:</label><br>
+        <select name="classe" id="classe">
+            <option value="guerreiro">Guerreiro</option>
+            <option value="mago">Mago</option>
+            <option value="arqueiro">Arqueiro</option>
+            <option value="barbaro">Bárbaro</option>
+            <option value="ladino">Ladino</option>
+            <option value="outra">Outra...</option>
+            <option value="selecionar" selected>Selecione</option>
+        </select><br><br>
+        <label for="habilidades">Habilidades Principais:</label><br>
+        <select name="habilidades" id="habilidades">
+            <option value="voar">Voar</option>
+            <option value="invisibilidade">Invisibilidade</option>
+            <option value="superforca">Super Força</option>
+            <option value="telepatia">Telepatia</option>
+            <option value="outros">Outro(s)...</option>
+            <option value="selecionar" selected>Selecione</option>
+        </select><br><br>
+
+        <label for="habilidadesEspeciais">Habilidades Especiais:</label><br>
+        <select name="habilidadesEspeciais" id="habilidadesEspeciais">
+            <option value="Saque">Saque</option>~
+            <option value="berserk">Berserk</option>
+            <option value="cura">Cura Espontânea</option>
+            <option value="ultimo">Ultimo Recurso</option>
+            <option value="selecionar"selected>Selecione</option>
+        </select><br><br>
+        <label for="forca">Nível de Força:</label><br>
+        <input type="range" id="forca" name="forca" min="0" max="100"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="origem">Origem do Herói:</label><br>
+            <input type="radio" id="origem1" name="origem" value="treviano"> <label for="origem1">Treviano</label><br>
+            <input type="radio" id="origem2" name="origem" value="luziano"> <label for="origem2">Luziano</label><br><br>
+            <label for="personalidade">Personalidade do Herói:</label><br>
+            <select name="personalidade" id="personalidade">
+                <option value="corajoso">Corajoso</option>
+                <option value="inteligente">Inteligente</option>
+                <option value="leal">Leal</option>
+                <option value="misterioso">Misterioso</option>
+                <option value="outra">Outra...</option>
+                <option value="selecionar" selected>Selecione</option>
+            </select><br><br>
+            <label for="historia">História do Herói:</label><br>
+            <textarea name="historia" id="historia" rows="10" cols="100"></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
