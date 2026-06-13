@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Cards</title>
+</head>
+<body>
+    <profile-card>
+        <span slot="nome">David</span>
+        <span slot="biografia">Olá!</span>
+
+    </profile-card>
+        
+    <profile-card>
+
+    </profile-card>
+
+    <template id="profile-card">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            .geral{
+                background-color: aquamarine;
+                font-family: 'Times New Roman', Times, serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 4px solid rgb(5, 153, 104);
+                padding: 10px;
+                margin: 2px;
+            }
+
+
+        </style>
+
+        <span class="geral">
+            <span class="icone" tabindex="0">
+                <img src="MelhorPFPdoZoom.jpeg" alt="">
+            </span>
+
+            <span class="info-nome">
+                <slot name="nome">Usuário Anónimo</slot>
+            </span>
+
+            <span class="info-biografia">
+                <slot name="biografia">Sem Biografia</slot>
+            </span>
+        </span>
+    </template>
+</body>
+</html>

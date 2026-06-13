@@ -8,5 +8,11 @@ class Pessoa {
     }
 }
 
+class Professor extends Pessoa{
+    constructor(){
+        super();
+    }
+}
+
 const  aluno = new Pessoa("David", 24) //Instanciei um objeto novo
 
